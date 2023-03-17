@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity2">
+
+
+
+            <TextView
+                android:id="@+id/tvView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/marginTitleTop_descrip"
+                android:textStyle="bold"
+                android:textSize="@dimen/title_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ExampleText"/>
+
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="@dimen/descrip_photos_width"
+                android:layout_height="@dimen/descrip_photos_height"
+                app:layout_constraintTop_toBottomOf="@+id/tvView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/marginStart_descrip"
+                android:src="@drawable/ricksanchez"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/imgView"
+                android:layout_marginTop="@dimen/marginTop_descrip"
+                android:layout_marginStart="@dimen/marginStart_descrip"
+                android:text="@string/ExampleText"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
