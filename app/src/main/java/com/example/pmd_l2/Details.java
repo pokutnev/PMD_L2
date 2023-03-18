@@ -13,14 +13,13 @@ public class Details{
     String description;
 
 
-    public Details(String name, int image) {
+
+    public Details(String name, int image, String description) {
         this.name = name;
         this.Image = image;
-    }
-
-    public Details(String description) {
         this.description = description;
     }
+
 
     public String getName() {
         return name;

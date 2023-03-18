@@ -13,11 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     Context context;
-    private MyListData[] listData;
+    private Details[] listData;
     private final RecycleViewInreface recycleViewInreface;
 
 
-    public MyAdapter(Context context, MyListData[] listData, RecycleViewInreface recycleViewInreface) {
+    public MyAdapter(Context context, Details[] listData, RecycleViewInreface recycleViewInreface) {
         this.context = context;
         this.listData = listData;
         this.recycleViewInreface = recycleViewInreface;
@@ -34,7 +34,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyAdapter.ViewHolder holder, int position) {
         holder.fullname.setText(listData[position].getName());
-        holder.photo.setImageResource(listData[position].getImageId());
+        holder.photo.setImageResource(listData[position].getImage());
     }
 
     @Override

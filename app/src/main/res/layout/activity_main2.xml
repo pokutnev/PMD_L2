@@ -13,7 +13,6 @@
             tools:context=".MainActivity2">
 
 
-
             <TextView
                 android:id="@+id/tvView"
                 app:layout_constraintTop_toTopOf="parent"
